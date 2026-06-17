@@ -4,9 +4,9 @@
 
 module.exports = {
   // ── Bot cơ bản ──────────────────────────────────────────
-  BOT_TOKEN: "YOUR_BOT_TOKEN_HERE",       // Token bot Discord
-  CLIENT_ID: "YOUR_CLIENT_ID_HERE",       // Application ID
-  GUILD_ID: "YOUR_GUILD_ID_HERE",         // Server ID (để register slash commands nhanh)
+  BOT_TOKEN: process.env.BOT_TOKEN,
+  CLIENT_ID: "1514941536029118594",       // Application ID
+  GUILD_ID: "1164530814281842698",         // Server ID (để register slash commands nhanh)
 
   // ── Giao diện Embed ─────────────────────────────────────
   EMBED: {
@@ -30,17 +30,17 @@ module.exports = {
   // ── Ưu tiên Role (index nhỏ hơn = ưu tiên cao hơn) ──────
   // Điền Role ID thực tế của server vào đây
   ROLE_PRIORITY: [
-    "ROLE_A_ID",   // Role A — ưu tiên cao nhất
-    "ROLE_B_ID",   // Role B
-    "ROLE_C_ID",   // Role C — ưu tiên thấp nhất
+    "1516653900122423396",   // Role A — ưu tiên cao nhất
+    "1516653252303785984",   // Role B
+    "1516653577785966754",   // Role C — ưu tiên thấp nhất
   ],
 
   // ── Phân phối mã theo role ───────────────────────────────
   // Key = Role ID, Value = tên hiển thị (dùng trong lệnh admin)
   ROLE_LABELS: {
-    "ROLE_A_ID": "Role A",
-    "ROLE_B_ID": "Role B",
-    "ROLE_C_ID": "Role C",
+    "1516653900122423396": "Role A",
+    "1516653252303785984": "Role B",
+    "1516653577785966754": "Role C",
   },
 
   // ── Gửi mã qua DM hay Ephemeral? ────────────────────────
@@ -50,5 +50,5 @@ module.exports = {
 
   // ── Quyền Admin ─────────────────────────────────────────
   // Chỉ những user có một trong các Role ID này mới dùng được lệnh admin
-  ADMIN_ROLE_IDS: ["ADMIN_ROLE_ID"],
+  ADMIN_ROLE_IDS: ["1164589069603459234", "1196367761056727091", "1165915375637102654"],
 };
