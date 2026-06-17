@@ -1,0 +1,21 @@
+{
+  "name": "discord-code-bot",
+  "version": "1.0.0",
+  "description": "Bot Discord phát mã theo role, hỗ trợ ephemeral/DM, quản lý qua slash commands",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "node deploy-commands.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
